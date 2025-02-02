@@ -1,0 +1,36 @@
+# Source
+src/
+tests/
+coverage/
+
+# Config files
+.eslintrc.js
+.prettierrc
+jest.config.js
+tsconfig.json
+tsconfig.build.json
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.*
+
+# Build artifacts
+*.tsbuildinfo
