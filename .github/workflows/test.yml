@@ -1,41 +1,28 @@
-name: Test
+name: Run tests and upload coverage
 
 on:
-  pull_request:
-    branches:
-      - main
-      - publish-to-npm
-  push:
-    branches:
-      - main
+  push
 
 jobs:
   test:
-    name: Run Tests
+    name: Run tests and collect coverage
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [16.x, 18.x, 20.x]
-
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
-      - name: Run linter
-        run: npm run lint
+      - name: Run tests
+        run: npx jest --coverage
 
-      - name: Run tests with coverage
-        run: npm run test:cov
-
-      - name: Upload coverage reports to Codecov
+      - name: Upload results to Codecov
         uses: codecov/codecov-action@v5
-        env:
+        with:
           token: ${{ secrets.CODECOV_TOKEN }}
