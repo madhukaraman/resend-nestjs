@@ -1,7 +1,7 @@
 import { ErrorResponse } from '@/common/interfaces/error.interface';
 
 interface EmailRenderOptions {
-  react?: React.ReactNode;
+  react?: any;
   html?: string;
   text?: string;
 }
