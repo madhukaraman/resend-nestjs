@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/@mnmadhukar/resend-nestjs.svg)](https://www.npmjs.com/package/@mnmadhukar/resend-nestjs)
 [![npm downloads](https://img.shields.io/npm/dm/@mnmadhukar/resend-nestjs.svg)](https://www.npmjs.com/package/@mnmadhukar/resend-nestjs)
-[![Test CI](https://github.com/madhukaraman/resend-nestjs/actions/workflows/test.yml/badge.svg)](https://github.com/mnmadhukar/resend-nestjs/actions/workflows/test.yml)
+[![Test CI](https://github.com/madhukaraman/resend-nestjs/actions/workflows/test.yml/badge.svg)](https://github.com/madhukaraman/resend-nestjs/actions/workflows/test.yml)
 [![codecov](https://codecov.io/gh/mnmadhukar/resend-nestjs/branch/main/graph/badge.svg)](https://codecov.io/gh/mnmadhukar/resend-nestjs)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
